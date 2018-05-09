@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="=" IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/animate.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/user.css" />
+</head>
+<body >
+    <!--导航-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--导航按钮-->
+            <div class="navbar-header wow fadeInDown">
+
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--logo-->
+                <a href="admin.html" class="navbar-brand " data-wow-duration="5s">admin</a>
+
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li id="admin"><a href="admin.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
+                    <li id="user"><a href="user.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户列表</a></li>
+                    <li id="airect"><a href=""><span class="glyphicon glyphicon-align-justify"></span>&nbsp;&nbsp;发布文章</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown ">
+                        <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li id="home"><a href="#">前台首页</a></li>
+                            <li id="set"><a href="#">个人设置</a></li>
+                            <li id=""><a href="#">主题</a></li>
+                        </ul>
+                    </li>
+                    <li id="exit"><a href="#">退出</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--导航-->
+    <!--首页-->
+    <section id="userhome" style="margin-top:90px;">
+        <div class="container">
+            <div class="row clearfix wow swing">
+                <div class="col-md-12 column">
+                    <div class="tabbable" id="tabs-510202">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#panel-1" data-toggle="tab">用户列表</a>
+                            </li>
+                            <li>
+                                <a href="#panel-2" data-toggle="tab">用户查询</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id = "vueid">
+                            <div class="tab-pane active" id="panel-1">
+                                <p>
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    编号
+                                                </th>
+                                                <th>
+                                                    用户名
+                                                </th>
+                                                <th>
+                                                    邮箱
+                                                </th>
+                                                <th>
+                                                    手机号
+                                                </th>
+                                                <th>
+                                                    备注
+                                                </th>
+                                                <th>
+                                                    注册日期
+                                                </th>
+                                                <th>
+                                                    操作
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    {{ id }}
+                                                </th>
+                                                <th>
+                                                    {{username}}
+                                                </th>
+                                                <th>
+                                                    {{email}}
+                                                </th>
+                                                <th>
+                                                    {{phone}}
+                                                </th>
+                                                <th>
+                                                    {{beizhu}}
+                                                </th>
+                                                <th>
+                                                    {{date}}
+                                                </th>
+                                                <th>
+                                                    <a data-toggle="from" data-target="#from" onclick="exitinfo(this)" >修改</a>
+                                                    <a onclick="delinfo(this)" >删除</a>
+                                                </th>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="panel-2">
+                                <div class="container">
+                                    <div class="row clearfix">
+                                        <div class="col-md-4 column">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="seachUser">用户名</label><input type="text" class="form-control" id="seachUser" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="seachEmail">Email</label><input type="email" class="form-control" id="seachEmail" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="seachDate">修改时间</label><input type="datetime" class="form-control" id="seachDate" />
+                                                </div>
+                                                <button type="submit" class="btn btn-default">查找</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-4 column">
+
+                                        </div>
+                                        <div class="col-md-4 column">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!--首页-->
+
+ 
+    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">修改列表</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="id">id</label>
+                  <input type="number" class="form-control" id="id" placeholder="id" value="10">
+                </div>
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" class="form-control" id="username" placeholder="username">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="Email" class="form-control" id="email" placeholder="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">手机号</label>
+                    <input type="phone" class="form-control" id="phone" placeholder="13069501706">
+                  </div>
+                  <div class="form-group">
+                    <label for="beizhu">备注</label>
+                    <input type="text" class="form-control" id="beizhu" placeholder="备注">
+                  </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">修改</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--底部-->
+    <footer>
+        <div class="container">
+            <div class="row" style="margin-top:30px;">
+                <div class="col-md-12">
+                    <p>zjw@Personal Information</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/jquery.singlePageNav.min.js"></script>
+    <script src="dist/js/wow.min.js"></script>
+    <script  src="js/vue.js"></script> 
+    <script language="javascript" src="js/admin.js" charset="GBK"></script>
+    <script language="javascript" src="js/user.js" charset="utf-8"></script>
+   
+    <script>
+
+        $(function () {
+            new WOW().init();
+            /*导航跳转效果插件*/
+            $('.nav').singlePageNav({
+                offset: 70
+            });
+            /*小屏幕导航点击关闭菜单*/
+            $('.navbar-collapse a').click(function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+
+        });
+
+    </script>
+</body>
+</html>
