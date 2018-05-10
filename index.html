@@ -209,25 +209,25 @@
                                             <div class="col-md-4 column">
                                                 <ul class="pagination">
                                                     <li>
-                                                        <a href="#">上一页</a>
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="没有上一页了">上一页</a>
+                                                    </li>
+                                                    <li >
+                                                        <a data-toggle="tooltip" data-placement="bottom" title="没有设置分页功能" href="#">1</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">1</a>
+                                                        <a data-toggle="tooltip" data-placement="bottom" title="没有设置分页功能" href="#">2</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">2</a>
+                                                        <a data-toggle="tooltip" data-placement="bottom" title="没有设置分页功能" href="#">3</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">3</a>
+                                                        <a data-toggle="tooltip" data-placement="bottom" title="没有设置分页功能" href="#">4</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">4</a>
+                                                        <a data-toggle="tooltip" data-placement="bottom" title="没有设置分页功能" href="#">5</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">5</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">下一页</a>
+                                                        <a data-toggle="tooltip" data-placement="right" title="没有更多了" href="#">下一页</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -284,7 +284,7 @@
         </div>
     </div>
     <!--模态框-->
-    <!--和我联系-->
+   <!--和我联系-->
     <section id="person">
         <div class="container">
             <div class="row wow fadeInUp">
@@ -320,6 +320,8 @@
                 </div>
 
     </section>
+   
+
     <footer>
         <div class="container">
             <div class="row">
@@ -349,7 +351,13 @@
             $('.navbar-collapse a').click(function () {
                 $('.navbar-collapse').collapse('hide');
             });
+            $('[data-toggle="popover"]').popover();
 
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                e.target // newly activated tab
+                e.relatedTarget // previous active tab
+              });
+            $('[data-toggle="tooltip"]').tooltip();
         });
 
     </script>
